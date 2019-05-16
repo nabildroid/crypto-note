@@ -214,7 +214,7 @@ ApplayTemplate=function(txt){ //applay some transforme to orign note content to 
 		return text
 	}
 
-	txt=txt.replace(/\\n/gm," | ");
+	txt=txt.replace(/\n/gm," | ");
 	txt=txt.split(" ");
 	// txt=txt.filter(e=>e.length);
 	var resolte=document.createElement("div");
