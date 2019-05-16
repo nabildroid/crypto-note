@@ -34,4 +34,8 @@ well this part is responsibe of checking if every is right when user try to logi
 result of hashed 3 partes with the old hash (part 4) and it's doesn't match that means this attemp to login
 is filed or the current sicret file is changed without permission
 
-
+### server side
+for read and write to sicret file we must provide it full path
+and if it exist will act with it otherways the server will create it if the requet provide also 
+it content
+and that's enoghof for manage the data
