@@ -1,0 +1,58 @@
+@media screen and (max-width: 600px) {
+
+    .Member {
+        width: 99%;
+        padding: 0 5px;
+    }
+
+    .Member #new {
+        width: 100%;
+    }
+
+    .Member #new input#title {
+        width: 95%;
+        font-size: 23px;
+    }
+
+    .Member #new textarea#text {
+        width: 95%;
+        font-size: 18px;
+        border: none;
+        background: #e0e0e030;
+    }
+
+    .Member #new #tool {
+        width: 95%;
+    }
+
+    .Member #new #tool button {
+        font-size: 23px;
+    }
+    
+    .Member div#hashtages {
+        position: relative;
+        width: 100%;
+        padding-top: 1em;
+        left: inherit;
+        overflow: auto;
+    }
+    .Member div#hashtages >div {
+        width: max-content;
+    }
+    .Member div#hashtages button {
+        width: initial;
+        min-width: 55px;
+        word-wrap: normal;
+        text-align: center;
+        margin: 0 2px;
+        padding: 0 5px;
+    }
+    .Member div#notes {
+        width: 100%;
+    }
+    .Member div#notes #note {
+        width: 99%;
+        margin: 1% auto;
+        position: relative !important;
+    }
+}

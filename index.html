@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Note </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="theme-color" content="#949494">
+	<link rel="manifest" href="manifest.json">
+	<link rel="icon"  href="images/icons/icon-128x128.png">
+
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/phone.css">
+	<link rel="stylesheet" type="text/css" href="style/color.css">
+
+	<script type="text/javascript">
+		let compressor=new Array();
+	</script>
+
+
+	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/guess.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+	<script type="text/javascript" src="js/crypto.js"></script>
+	<script type="text/javascript" src="js/hashtag.js"></script>
+	<script type="text/javascript" src="js/newnote.js"></script>
+	<script type="text/javascript" src="js/note.js"></script>
+	<script type="text/javascript" src="js/member.js"></script>
+	<script type="text/javascript" src="js/control.js"></script>
+	<script type="text/javascript" src="js/translate.js"></script>
+	<script type="text/javascript">
+		navigator.serviceWorker.register("sw.js");
+
+	</script>	
+</head>
+<body>
+
+<div id="noti"></div>
+
+<div class="login" hidden="">
+	<h2>تسجيل الدخول </h2>
+	<div id="content">
+		<input type="text" id="username"/>
+		<div id="tool">
+			<input type="password" id="pass">
+			<button id="beMember">حساب جديد</button>
+			<button id="login">تسجيل</button>
+		</div>
+	</div>
+</div>
+<div class="Member" hidden="">
+	<div id="info">
+		<h3>مرحبا  <span id="username"></span></h3>
+		<div id="load"></div>
+		<h3>اخر تواجد: <span id="lastSession"></span></h4>
+	</div>
+	<div id="new">
+		<input type="text" id="title">
+		<textarea id="text"></textarea>
+		<div id="tool">
+			<div id="color">
+				<span class="brown"></span>
+				<span class="red"></span>
+				<span class="perpel"></span>
+				<span class="blue"></span>
+				<span class="green"></span>
+				<span class="yellow"></span>
+			</div>
+			<button hidden="" id="save">نشر</button>
+		</div>
+	</div>
+	<div id="hashtages">
+	</div>
+	<div id="notes" >
+		<!-- <div id="note">
+			<h3></h3>
+			<p></p>
+		</div> -->
+	<button id="save">save</button>
+	</div>
+</div>
+
+</body>
+</html>
