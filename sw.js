@@ -1,4 +1,4 @@
-let version="1.4.8";
+let version="1.4.9";
 self.addEventListener("install",(event)=>{
 	event.waitUntil(
 		caches.open("note-"+version).then(async cach=>{

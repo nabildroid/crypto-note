@@ -50,6 +50,8 @@ class Crypto{
 		for(var i=0;i<pass.length;i++)
 			temp+=pass[i].charCodeAt(0).toString()
 		var asciPass=Math.log(temp)/Math.log(2)/temp.length;
+		
+		console.log(asciPass,PaddU);
 		var letter=[];
 		for(var e in this.letter)
 			letter=letter.concat(this.letter[e]);
@@ -66,7 +68,6 @@ class Crypto{
 			var mCode=fx(m.toString())//convert letter to code using fx function
 			while(code.map(e=>(e[1]==mCode)?code.indexOf(e)+1:0).filter(e=>e).length)
 				mCode=(mCode+1)%(letter.length);
-
 			code.push([m,mCode]);
 		}
 		return code;
