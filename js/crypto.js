@@ -50,8 +50,6 @@ class Crypto{
 		for(var i=0;i<pass.length;i++)
 			temp+=pass[i].charCodeAt(0).toString()
 		var asciPass=Math.log(temp)/Math.log(2)/temp.length;
-		
-		console.log(asciPass,PaddU);
 		var letter=[];
 		for(var e in this.letter)
 			letter=letter.concat(this.letter[e]);
