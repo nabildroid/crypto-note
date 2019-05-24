@@ -6,7 +6,7 @@ var db;
 var CRYPTO;
 var member;
 let  t;
-let prepareApp=()=>{
+window.addEventListener("DOMContentLoaded",()=>{
 	Array.from(elm("body > div","",1)).pop().remove()
 	connect=new Ajax("../note.php","POST");
 	CRYPTO=new Crypto;
@@ -24,5 +24,4 @@ let prepareApp=()=>{
 	// 	return fade(elm(".loader"),0);
 	// }).then(()=>);
 
-
-};
+});
