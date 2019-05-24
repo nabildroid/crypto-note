@@ -14,8 +14,6 @@ self.addEventListener("install",(event)=>{
 				"./js/note.js",
 				"./js/hashtag.js",
 				"./js/guess.js",
-				"./js/translate.js",
-				"./js/translate.json",
 				"./style/color.css",
 				"./style/phone.css",
 				"./style/style.css"
