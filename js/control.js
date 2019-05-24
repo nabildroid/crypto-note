@@ -8,7 +8,7 @@ var member;
 let  t;
 window.addEventListener("DOMContentLoaded",()=>{
 	Array.from(elm("body > div","",1)).pop().remove()
-	connect=new Ajax("../note.php","POST");
+	connect=new Ajax("https://pfalgeria2018.000webhostapp.com/note.php","POST");
 	CRYPTO=new Crypto;
 
 	fade(elm(".login"),1).then(()=>{
