@@ -20,28 +20,12 @@ self.addEventListener("install",(event)=>{
 				"./style/phone.css",
 				"./style/style.css"
 			]);
-			// cach.match("/note.php").then(m=>{
-			// 	if(!m){
-			// 		cach.put(new Request("/note.php"),new Response(""));
-			// 	}
-			// })
 		}).then(()=>{
 			self.skipWaiting();
-			// clients.get(event.clientId).then(e=>console.log(e))
 		})
 	);
 })
-self.addEventListener("message",(event)=>{
-	console.log(event.data);
-});
-
 self.addEventListener("activate",(event)=>{
-	clients.matchAll().then(client=>{
-		client.forEach(client=>{
-			client.postMessage("Hello window from SW");
-		});
-	});
-
 	event.waitUntil(
 		caches.keys().then(ks=>{
 			return Promise.all(ks.map(k=>{
@@ -118,9 +102,5 @@ async function  treatFetch(event) {
 		})
 	});
 }
-function manifyURL(url){//url without get data search
-	return url.origin+url.pathname;
-}
-
 
 
