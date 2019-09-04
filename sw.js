@@ -1,4 +1,4 @@
-let version="1.4.9";
+let version="1.4.10";
 self.addEventListener("install",(event)=>{
 	event.waitUntil(
 		caches.open("note-"+version).then(async cach=>{
@@ -14,8 +14,6 @@ self.addEventListener("install",(event)=>{
 				"./js/note.js",
 				"./js/hashtag.js",
 				"./js/guess.js",
-				"./js/translate.js",
-				"./js/translate.json",
 				"./style/color.css",
 				"./style/phone.css",
 				"./style/style.css"
