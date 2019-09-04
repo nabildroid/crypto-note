@@ -5,8 +5,8 @@
   "background_color": "#ffffff",
   "display": "fullscreen",
   "orientation": "portrait",
-  "Scope": "/note/",
-  "start_url": "/note/",
+  "Scope": "/crypto-note/",
+  "start_url": "/crypto-note/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
